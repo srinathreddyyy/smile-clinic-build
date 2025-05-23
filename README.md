@@ -58,7 +58,7 @@ This is a comprehensive dental clinic website featuring:
    ```
 
 4. **Open your browser**
-   Navigate to `http://localhost:8080` to view the application.
+   Navigate to `http://localhost:5173` to view the application.
 
 ## 🏗️ Project Structure
 
@@ -234,4 +234,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Note**: This is a demonstration project for a Front-End Web Development Internship application. All contact information and business details are fictional and for portfolio purposes only.
+**Note**: This is a demonstration project showcasing modern web development practices and dental clinic website functionality.
