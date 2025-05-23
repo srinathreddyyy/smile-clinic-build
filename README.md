@@ -1,73 +1,237 @@
-# Welcome to your Lovable project
 
-## Project info
+# Today's Dental Services - Professional Dental Care Website
 
-**URL**: https://lovable.dev/projects/4d1bf9c1-9b1b-4ce2-9050-0b34a64626dd
+A modern, responsive dental clinic website built with React, TypeScript, and Tailwind CSS. This project showcases a complete dental services website with booking functionality, service details, and contact forms.
 
-## How can I edit this code?
+## 🚀 Live Demo
 
-There are several ways of editing your application.
+[View Live Demo](https://your-netlify-app.netlify.app) *(To be deployed)*
 
-**Use Lovable**
+## 📋 Project Overview
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4d1bf9c1-9b1b-4ce2-9050-0b34a64626dd) and start prompting.
+This is a comprehensive dental clinic website featuring:
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Home Page**: Hero section, services overview, testimonials, and call-to-action
+- **About Us Page**: Clinic background, team information, and mission statement
+- **Services Page**: Detailed list of 6+ dental services with expandable modals
+- **Contact Page**: Contact form with validation, clinic information, and Google Maps integration
+- **Common Components**: Header navigation, footer, and FAQ section
 
-**Use your preferred IDE**
+## 🛠️ Technical Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Framework**: React 18 with TypeScript
+- **Styling**: Tailwind CSS with custom design system
+- **Routing**: React Router DOM
+- **HTTP Client**: Axios for form submissions
+- **UI Components**: shadcn/ui component library
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **State Management**: React Hooks (useState, useEffect)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📦 Installation & Setup
 
-Follow these steps:
+### Prerequisites
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Node.js (v16 or higher)
+- npm or yarn package manager
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Getting Started
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/todays-dental-services.git
+   cd todays-dental-services
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:8080` to view the application.
+
+## 🏗️ Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # shadcn/ui components
+│   ├── Header.tsx      # Navigation header
+│   ├── Footer.tsx      # Site footer
+│   └── FAQ.tsx         # Frequently asked questions
+├── pages/              # Main page components
+│   ├── Home.tsx        # Landing page
+│   ├── About.tsx       # About us page
+│   ├── Services.tsx    # Services listing
+│   ├── Contact.tsx     # Contact form & info
+│   └── NotFound.tsx    # 404 error page
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+├── App.tsx             # Main app component
+├── main.tsx            # Application entry point
+└── index.css           # Global styles
 ```
 
-**Edit a file directly in GitHub**
+## 🎨 Design Features
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Color Scheme
+- **Primary Blue**: #0ea5e9 (Dental blue)
+- **Secondary Teal**: #14b8a6 (Accent color)
+- **Light Blue**: #e0f2fe (Background accents)
+- **Mint Green**: #a7f3d0 (Success states)
 
-**Use GitHub Codespaces**
+### Typography
+- **Headers**: Playfair Display (serif)
+- **Body Text**: Inter (sans-serif)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Components
+- Responsive navigation with mobile menu
+- Animated hero sections with gradients
+- Card-based layouts with hover effects
+- Modal dialogs for service details
+- Form validation with error handling
+- Interactive FAQ accordion
 
-## What technologies are used for this project?
+## 📱 Responsive Design
 
-This project is built with:
+The website is fully responsive and optimized for:
+- **Desktop**: 1200px and above
+- **Tablet**: 768px - 1199px
+- **Mobile**: 320px - 767px
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🔧 Key Features
 
-## How can I deploy this project?
+### Form Handling
+- Contact form with full validation
+- Axios integration for form submissions
+- Success/error toast notifications
+- Real-time validation feedback
 
-Simply open [Lovable](https://lovable.dev/projects/4d1bf9c1-9b1b-4ce2-9050-0b34a64626dd) and click on Share -> Publish.
+### Services Section
+- 6+ dental services with detailed descriptions
+- Expandable modal dialogs
+- Service pricing and duration information
+- Technology highlights
 
-## Can I connect a custom domain to my Lovable project?
+### Interactive Elements
+- Smooth scrolling navigation
+- Hover animations and transitions
+- Loading states for form submissions
+- Mobile-friendly touch interactions
 
-Yes, you can!
+### Accessibility
+- Semantic HTML structure
+- ARIA labels and roles
+- Keyboard navigation support
+- Color contrast compliance
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🚀 Deployment
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Netlify (Recommended)
+
+1. **Build the project**
+   ```bash
+   npm run build
+   ```
+
+2. **Deploy to Netlify**
+   - Drag and drop the `dist` folder to Netlify
+   - Or connect your GitHub repository for continuous deployment
+
+### Vercel
+
+1. **Install Vercel CLI**
+   ```bash
+   npm i -g vercel
+   ```
+
+2. **Deploy**
+   ```bash
+   vercel --prod
+   ```
+
+### GitHub Pages
+
+1. **Install gh-pages**
+   ```bash
+   npm install --save-dev gh-pages
+   ```
+
+2. **Add deployment script to package.json**
+   ```json
+   {
+     "scripts": {
+       "deploy": "gh-pages -d dist"
+     }
+   }
+   ```
+
+3. **Deploy**
+   ```bash
+   npm run build
+   npm run deploy
+   ```
+
+## 📝 Environment Variables
+
+Create a `.env` file in the root directory for any environment-specific configurations:
+
+```env
+VITE_API_URL=https://your-api-endpoint.com
+VITE_GOOGLE_MAPS_API_KEY=your-google-maps-api-key
+```
+
+## 🧪 Testing
+
+Run the development server and test:
+
+1. **Navigation**: Test all page routes and mobile menu
+2. **Forms**: Submit contact form with various inputs
+3. **Responsive**: Check layout on different screen sizes
+4. **Accessibility**: Test with screen readers and keyboard navigation
+
+## 📄 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📞 Support
+
+For any questions or issues, please contact:
+- **Email**: developer@todaysdental.com
+- **GitHub Issues**: [Create an issue](https://github.com/yourusername/todays-dental-services/issues)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **shadcn/ui** for the beautiful component library
+- **Lucide React** for the comprehensive icon set
+- **Tailwind CSS** for the utility-first CSS framework
+- **Unsplash** for the high-quality placeholder images
+
+---
+
+**Note**: This is a demonstration project for a Front-End Web Development Internship application. All contact information and business details are fictional and for portfolio purposes only.
