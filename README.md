@@ -3,10 +3,6 @@
 
 A modern, responsive dental clinic website built with React, TypeScript, and Tailwind CSS. This project showcases a complete dental services website with booking functionality, service details, and contact forms.
 
-## 🚀 Live Demo
-
-[View Live Demo](https://your-netlify-app.netlify.app) *(To be deployed)*
-
 ## 📋 Project Overview
 
 This is a comprehensive dental clinic website featuring:
