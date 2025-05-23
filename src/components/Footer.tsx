@@ -24,16 +24,16 @@ const Footer = () => {
               Providing exceptional dental care with modern technology and compassionate service for over 15 years.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-dental-blue transition-colors">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-dental-blue transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-dental-blue transition-colors">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-dental-blue transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-dental-blue transition-colors">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-dental-blue transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-dental-blue transition-colors">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-dental-blue transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
@@ -47,8 +47,8 @@ const Footer = () => {
               <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
               <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors">Services</Link></li>
               <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Emergency Care</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Patient Portal</a></li>
+              <li><a href="tel:+15551234567" className="text-gray-400 hover:text-white transition-colors">Emergency Care</a></li>
+              <li><a href="#patient-portal" className="text-gray-400 hover:text-white transition-colors">Patient Portal</a></li>
             </ul>
           </div>
 
@@ -56,12 +56,12 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Our Services</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">General Dentistry</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Cosmetic Dentistry</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Orthodontics</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Oral Surgery</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Periodontics</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Endodontics</a></li>
+              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors">General Dentistry</Link></li>
+              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors">Cosmetic Dentistry</Link></li>
+              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors">Orthodontics</Link></li>
+              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors">Oral Surgery</Link></li>
+              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors">Periodontics</Link></li>
+              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors">Endodontics</Link></li>
             </ul>
           </div>
 
@@ -75,11 +75,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-dental-blue" />
-                <span className="text-gray-400">(555) 123-4567</span>
+                <a href="tel:+15551234567" className="text-gray-400 hover:text-white transition-colors">(555) 123-4567</a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-dental-blue" />
-                <span className="text-gray-400">info@todaysdental.com</span>
+                <a href="mailto:info@todaysdental.com" className="text-gray-400 hover:text-white transition-colors">info@todaysdental.com</a>
               </li>
               <li className="flex items-start space-x-3">
                 <Clock className="h-5 w-5 text-dental-blue mt-0.5" />
@@ -96,8 +96,8 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
             © 2025 Today's Dental Services. All rights reserved. | 
-            <a href="#" className="hover:text-white transition-colors"> Privacy Policy</a> | 
-            <a href="#" className="hover:text-white transition-colors"> Terms of Service</a>
+            <a href="#privacy" className="hover:text-white transition-colors"> Privacy Policy</a> | 
+            <a href="#terms" className="hover:text-white transition-colors"> Terms of Service</a>
           </p>
         </div>
       </div>
