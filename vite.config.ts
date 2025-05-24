@@ -1,4 +1,5 @@
 
+
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
@@ -6,7 +7,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Set base path for GitHub Pages - use repository name
+  // Set base path for GitHub Pages - use your actual repository name
   base: mode === 'production' ? '/smile-clinic-build/' : '/',
   server: {
     host: "::",
@@ -23,3 +24,4 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
+
