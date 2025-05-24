@@ -19,7 +19,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename={import.meta.env.PROD ? '/smile-clinic-build' : ''}>
+      <BrowserRouter basename="/smile-clinic-build">
         <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-grow">
@@ -40,4 +40,3 @@ const App = () => (
 );
 
 export default App;
-
