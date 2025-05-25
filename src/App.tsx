@@ -14,12 +14,15 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// Determine the basename based on environment
+const basename = import.meta.env.MODE === 'production' ? '/smile-clinic-build' : '';
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/smile-clinic-build">
+      <BrowserRouter basename={basename}>
         <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-grow">
